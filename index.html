@@ -10,7 +10,7 @@
     <h1 >Kalkulator Matematik Bangun</h1>
     <form id="segitigaForm">
         <div class="question">1. Hitung Luas dan Keliling pada bangun datar bawah ini:</div>
-        <img src="segitiga.jpg" alt="Segitiga">
+        <img src="Segitiga.png" alt="Segitiga">
         <br>
         <label for="tinggi" >Tinggi:</label>
         <input type="number" id="tinggi" name="tinggi" required>
@@ -22,26 +22,6 @@
     </form>
     <div id="result"></div>
 
-    <script>
-        document.getElementById("segitigaForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const tinggi = parseFloat(document.getElementById("tinggi").value);
-            const alas = parseFloat(document.getElementById("alas").value);
-
-            if (tinggi > 0 && alas > 0) {
-                const luas = 0.5 * alas * tinggi;
-                const keliling = alas + tinggi + Math.sqrt(alas * alas + tinggi * tinggi);
-
-                document.getElementById("result").innerHTML = `
-                    <h2>Hasil:</h2>
-                    <p>Luas: ${luas}</p>
-                    <p>Keliling: ${keliling}</p>
-                `;
-            } else {
-                alert("Masukkan nilai yang lebih besar dari 0");
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
