@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+    background-color: #e53935;
+}
+
+#result {
+    margin: 2em 0;
+}
